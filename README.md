@@ -14,7 +14,7 @@ Personal website of Ning Zhang, <https://ning.im>. Built with [Hugo](https://goh
 | `static/{about,cn,en}/...` | Older duplicate pages kept on purpose so their URLs keep working |
 | `themes/hugo-ivy/` | Theme (vendored copy) |
 | `R/`, `.Rprofile`, `blog.Rproj` | RStudio / blogdown project files |
-| `.github/workflows/` | `build.yml` checks `dev`/PRs; `deploy.yml` publishes `main` to GitHub Pages |
+| `.github/workflows/build.yml` | Build check on `dev` and PRs |
 
 ## Writing
 
@@ -31,3 +31,14 @@ Body text.
 
 Preview with RStudio (blogdown "Serve Site") or `hugo server`.
 `hugo` writes the site to `public/` (git-ignored).
+
+## Deployment
+
+Hosted on **Cloudflare Pages** (connected to this repo):
+
+- Build command: `hugo`
+- Output directory: `public`
+- Environment variable: `HUGO_VERSION = 0.110.0`
+
+Every push to the production branch redeploys ning.im; other branches get preview URLs
+on `*.pages.dev`.

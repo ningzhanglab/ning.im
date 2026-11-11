@@ -29,3 +29,5 @@
 - Duplicate pages from `main` are kept under `static/`.
 - Removed Netlify files (`netlify.toml`, `_redirects`): the site is served by GitHub Pages.
 - Added GitHub Actions: build check for `dev`/PRs and a Pages deploy workflow for `main`.
+- Hosting moves to Cloudflare Pages: removed the GitHub Pages deploy workflow and
+  restored `static/_redirects` (`/logo.png` -> `/images/logo.png`).
