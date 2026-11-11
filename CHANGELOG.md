@@ -34,3 +34,10 @@
 - Removed the old page copies (`/about/`, `/en/1/01/about/`, `/cn/1/01/关于/`,
   `/cn/1/01/test/`, `/cn/2016/05/about/`, `/cn/about/2016/05/about/`); their URLs now
   return 404 (no redirects).
+
+## 2026-11-10 — Page tweaks
+
+- `PAPERS` test post (`content/en/test/index.md`) set to `draft: true`.
+- Blog / 日志 lists show only posts; About pages no longer appear with date `0001-01-01`.
+- `/cn/` pages declare `lang="zh-CN"` (`layouts/partials/header.html` override).
+- `images/logo.png` resized 886px -> 320px (189 KB -> 38 KB).

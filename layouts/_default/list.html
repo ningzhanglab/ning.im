@@ -13,7 +13,7 @@
   </p>
   {{ end }}
 {{ else }}
-  {{ range .Pages.GroupByDate "2006" }}
+  {{ range .RegularPages.GroupByDate "2006" }}
   <h2 class="archive-title">{{ .Key }}</h2>
   {{ range .Pages.GroupByDate "01" }}
   <ul>
