@@ -1,21 +1,22 @@
 {{ if and (not .Params.disable_comments) (or (eq .Kind "404") (and (not .IsHome) .Content)) }}
 <section class="comments">
-<script {{ if $.Site.BuildDrafts }}data-{{ end }}src="https://giscus.app/client.js"
-  data-repo="ningzhanglab/discussion"
-  data-repo-id="R_kgDOLtfAXA"
-  data-category="Announcements"
-  data-category-id="DIC_kwDOLtfAXM4Cep_M"
-  data-mapping="{{ if eq $.Kind "404" }}number{{ else }}pathname{{ end }}"
-  {{ if eq $.Kind "404" }}data-term="949"{{ end }}
-  data-strict="1"
-  data-reactions-enabled="1"
-  data-emit-metadata="0"
-  data-input-position="bottom"
-  data-theme="preferred_color_scheme"
-  data-lang="{{ if len (findRE "^/cn/" .RelPermalink) }}zh-CN{{ else }}en{{ end }}"
-  data-loading="lazy"
-  crossorigin="anonymous"
-  defer>
+<script src="https://giscus.app/client.js"
+        data-repo="ningzhanglab/discussion"
+        data-repo-id="R_kgDOLtfAXA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOLtfAXM4Cep_M"
+        data-mapping="{{ if eq .Kind "404" }}number{{ else }}pathname{{ end }}"
+        {{ with .Params.giscus_number }}data-term="{{ . }}"{{ end }}
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="{{ if findRE "^/cn/" .RelPermalink }}zh-CN{{ else }}en{{ end }}"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        defer>
 </script>
 </section>
 {{ end }}
+
