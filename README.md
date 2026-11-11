@@ -1,33 +1,25 @@
 # ning.im
 
-Personal website of Ning Zhang, <https://ning.im>. Built with [Hugo](https://gohugo.io)
-**0.110.0 (extended)** and the vendored `hugo-ivy` theme.
+Personal website of Ning Zhang, served at <https://ning.im>.
+
+This repository holds the **built output** of a Hugo (hugo-lithium theme) / blogdown
+site, deployed as-is. The Hugo source (`content/`, `config`, theme) is not stored here.
 
 ## Layout
 
 | Path | Purpose |
 |------|---------|
-| `config.yaml` | Site config: menu, permalinks, params |
-| `content/` | Markdown sources: `en/`, `cn/`, `CV/` |
-| `layouts/` | Site-level overrides of the theme (comments, menu, head, ...) |
-| `static/` | Copied as-is: `css/custom.css`, `images/`, `folder/CV.pdf`, `favicon.ico`, `_redirects` |
-| `static/{about,cn,en}/...` | Older duplicate pages kept on purpose so their URLs keep working |
-| `themes/hugo-ivy/` | Theme (vendored copy) |
-| `R/`, `.Rprofile`, `blog.Rproj` | RStudio / blogdown project files |
-| `.github/workflows/` | `build.yml` checks `dev`/PRs; `deploy.yml` publishes `main` to GitHub Pages |
+| `index.html`, `index.xml` | Home page and RSS feed |
+| `en/` | English blog (`en/about/`, `en/2017/01/papers/`) |
+| `cn/` | Chinese blog (`cn/about/`) |
+| `cv/` | CV page; PDF lives in `folder/CV.pdf` |
+| `categories/`, `tags/` | Taxonomy pages |
+| `css/` | `style.css` (theme), `fonts.css`, `custom.css` (site overrides) |
+| `images/` | `logo.png` |
+| `layouts/partials/comments.html` | Giscus comments partial (Hugo template source, not served) |
+| `404.html`, `sitemap.xml`, `robots.txt`, `favicon.ico` | Site-level files |
+| `_redirects` | Redirect rules |
+| `CHANGELOG.md` | Log of structural changes |
 
-## Writing
-
-Add a Markdown file, e.g. `content/cn/my-post.md`:
-
-```
----
-title: Post title
-date: '2026-11-10'
----
-
-Body text.
-```
-
-Preview with RStudio (blogdown "Serve Site") or `hugo server`.
-`hugo` writes the site to `public/` (git-ignored).
+Editing the generated HTML directly will be overwritten on the next Hugo build;
+change the source project instead.

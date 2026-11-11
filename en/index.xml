@@ -1,0 +1,59 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Ning Zhang</title>
+    <link>https://ning.im/en/</link>
+    <description>Recent content in Blogs on Ning Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ning.im/en/" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PAPERS</title>
+      <link>https://ning.im/en/2017/01/papers/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>Ning Zhang</author>
+      <guid>https://ning.im/en/2017/01/papers/</guid>
+      <description>
+        <![CDATA[
+        <p>sdkfhajlfh</p>
+
+        
+        <script>location.href='https://ning.im/en/2017/01/papers/';</script>
+        
+        ]]>
+      </description>
+    </item>
+    
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://ning.im/en/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Ning Zhang</author>
+      <guid>https://ning.im/en/about/</guid>
+      <description>
+        <![CDATA[
+        <p>What is the Economics?</p>
+<p>I embarked on a long journey to uncover a deeper answer to this question. Unfortunately, I have yet to find a satisfying response and am still in the process of searching for  insights and training in economics.</p>
+<p>At this period, I am not sure which kind people I am. I try to find myself and love myself. You can view my <a href="https://ning.im/cv/">CV</a> and you may formally know more about me.</p>
+<p>I enjoy beer, cooking, travel, and cars. I often find myself lost in thought and am eager to engage in meaningful endeavors.</p>
+<h3 id="find-me">Find Me</h3>
+<p>Mail: mail#ning.im</p>
+<p>Twitter: <a href="https://twitter.com/Ning_Zh_">@Ning_Zh_</a></p>
+<h3 id="about-website">About Website</h3>
+<p>This website is built by <a href="https://bookdown.org/yihui/blogdown/">Blogdown</a> in R and based on Hugo and I used model and frame from <a href="https://yihui.org">Yihui&rsquo;s</a> website. I love his thoughts about Internet and website building which would record your history and every step in modern Internet, but also people can preserve ideas from the past.</p>
+<p>I am not good at coding, obviously, this website has some bugs that I cannot fix it.</p>
+
+        
+        <script>location.href='https://ning.im/en/about/';</script>
+        
+        ]]>
+      </description>
+    </item>
+    
+    
+  </channel>
+</rss>

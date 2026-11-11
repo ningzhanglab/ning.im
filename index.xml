@@ -1,0 +1,72 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homepage on Ning Zhang</title>
+    <link>https://ning.im/</link>
+    <description>Recent content in Homepage on Ning Zhang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ning.im/" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogs</title>
+      <link>https://ning.im/en/</link>
+      <pubDate>Tue, 31 Jan 2017 00:00:00 +0000</pubDate>
+      <author>Ning Zhang</author>
+      <guid>https://ning.im/en/</guid>
+      <description>
+        <![CDATA[
+        
+        
+        <script>location.href='https://ning.im/en/';</script>
+        
+        ]]>
+      </description>
+    </item>
+    
+    
+    
+    <item>
+      <title>CV/简历</title>
+      <link>https://ning.im/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ning.im/cv/</guid>
+      <description>
+        <![CDATA[
+        <p>The latest CV is here~ (Last Updated: Jan. 2026 )</p>
+<p><a href="https://ning.im/folder/CV.pdf"><strong>In English</strong></a> (click here)</p>
+<h3 id="education">Education</h3>
+<ul>
+<li>Ph.D. in Economics (In progress)</li>
+<li>M.S. Applied Economics &amp; Policy Analysis, University of Arizona, USA (2022-204)</li>
+<li>B.A. Economics, Yancheng Teachers University, China (2016-2020)</li>
+</ul>
+<h3 id="papers">Papers</h3>
+<p>none</p>
+
+        
+        ]]>
+      </description>
+    </item>
+    
+    
+    
+    <item>
+      <title>日志</title>
+      <link>https://ning.im/cn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Ning Zhang</author>
+      <guid>https://ning.im/cn/</guid>
+      <description>
+        <![CDATA[
+        
+        
+        ]]>
+      </description>
+    </item>
+    
+    
+  </channel>
+</rss>
