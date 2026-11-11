@@ -33,4 +33,4 @@
   restored `static/_redirects` (`/logo.png` -> `/images/logo.png`).
 - Removed the old page copies (`/about/`, `/en/1/01/about/`, `/cn/1/01/关于/`,
   `/cn/1/01/test/`, `/cn/2016/05/about/`, `/cn/about/2016/05/about/`); their URLs now
-  301-redirect to `/en/about/`, `/cn/about/` or `/cn/`.
+  return 404 (no redirects).

@@ -40,5 +40,4 @@ with Workers Builds:
 - Build command: `bash build.sh` (installs Hugo 0.110.0 if needed, writes `public/`)
 - Deploy command: `npx wrangler deploy` (reads `wrangler.jsonc`)
 
-`static/_redirects` is copied into `public/` and applied by Cloudflare; it also sends old
-page URLs (`/about/`, `/en/1/01/about/`, `/cn/1/01/关于/`, ...) to the current pages.
+`static/_redirects` is copied into `public/` and applied by Cloudflare.

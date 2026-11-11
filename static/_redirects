@@ -1,15 +1,1 @@
-/logo.png                   /images/logo.png  301
-
-# Old page copies left by earlier builds; send them to the current pages
-/about                      /en/about/  301
-/about/                     /en/about/  301
-/en/1/01/about              /en/about/  301
-/en/1/01/about/             /en/about/  301
-/cn/1/01/%E5%85%B3%E4%BA%8E  /cn/about/  301
-/cn/1/01/%E5%85%B3%E4%BA%8E/ /cn/about/  301
-/cn/1/01/test               /cn/        301
-/cn/1/01/test/              /cn/        301
-/cn/2016/05/about           /cn/about/  301
-/cn/2016/05/about/          /cn/about/  301
-/cn/about/2016/05/about     /cn/about/  301
-/cn/about/2016/05/about/    /cn/about/  301
+/logo.png  /images/logo.png  301
