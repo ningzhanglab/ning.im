@@ -14,7 +14,7 @@ Personal website of Ning Zhang, <https://ning.im>. Built with [Hugo](https://goh
 | `static/{about,cn,en}/...` | Older duplicate pages kept on purpose so their URLs keep working |
 | `themes/hugo-ivy/` | Theme (vendored copy) |
 | `R/`, `.Rprofile`, `blog.Rproj` | RStudio / blogdown project files |
-| `netlify.toml`, `.github/workflows/build.yml` | Build configuration |
+| `.github/workflows/` | `build.yml` checks `dev`/PRs; `deploy.yml` publishes `main` to GitHub Pages |
 
 ## Writing
 

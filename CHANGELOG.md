@@ -27,4 +27,5 @@
 - `layouts/partials/menu_extra.html`: RSS link now lower-cased (`/cv/index.xml`).
 - Removed `Rhistory` / `.DS_Store` files, `public/`, `resources/`, `config copy.txt`.
 - Duplicate pages from `main` are kept under `static/`.
-- Replaced the outdated `netlify.toml` (Hugo 0.25.1, missing `build.sh`); added a GitHub Actions build check.
+- Removed Netlify files (`netlify.toml`, `_redirects`): the site is served by GitHub Pages.
+- Added GitHub Actions: build check for `dev`/PRs and a Pages deploy workflow for `main`.
