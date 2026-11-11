@@ -11,7 +11,6 @@ Personal website of Ning Zhang, <https://ning.im>. Built with [Hugo](https://goh
 | `content/` | Markdown sources: `en/`, `cn/`, `CV/` |
 | `layouts/` | Site-level overrides of the theme (comments, menu, head, ...) |
 | `static/` | Copied as-is: `css/custom.css`, `images/`, `folder/CV.pdf`, `favicon.ico`, `_redirects` |
-| `static/{about,cn,en}/...` | Older duplicate pages kept on purpose so their URLs keep working |
 | `themes/hugo-ivy/` | Theme (vendored copy) |
 | `R/`, `.Rprofile`, `blog.Rproj` | RStudio / blogdown project files |
 | `.github/workflows/build.yml` | Build check on `dev` and PRs |
@@ -41,4 +40,5 @@ with Workers Builds:
 - Build command: `bash build.sh` (installs Hugo 0.110.0 if needed, writes `public/`)
 - Deploy command: `npx wrangler deploy` (reads `wrangler.jsonc`)
 
-`static/_redirects` is copied into `public/` and applied by Cloudflare.
+`static/_redirects` is copied into `public/` and applied by Cloudflare; it also sends old
+page URLs (`/about/`, `/en/1/01/about/`, `/cn/1/01/关于/`, ...) to the current pages.

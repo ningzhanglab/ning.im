@@ -31,3 +31,6 @@
 - Added GitHub Actions: build check for `dev`/PRs and a Pages deploy workflow for `main`.
 - Hosting moves to Cloudflare (Worker with static assets, `wrangler.jsonc` + `build.sh`): removed the GitHub Pages deploy workflow and
   restored `static/_redirects` (`/logo.png` -> `/images/logo.png`).
+- Removed the old page copies (`/about/`, `/en/1/01/about/`, `/cn/1/01/关于/`,
+  `/cn/1/01/test/`, `/cn/2016/05/about/`, `/cn/about/2016/05/about/`); their URLs now
+  301-redirect to `/en/about/`, `/cn/about/` or `/cn/`.
