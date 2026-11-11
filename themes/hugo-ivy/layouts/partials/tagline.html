@@ -1,0 +1,30 @@
+{{/* --- 1. 智能判断：根据当前路径选择 en 或 cn 的配置 --- */}}
+{{ $conf := .Site.Params.logo.en }}   {{/* 默认加载英文配置 */}}
+
+{{/* 如果当前页面的链接中包含 /cn/，则强制切换为中文配置 */}}
+{{ if findRE "^/cn/" .RelPermalink }}
+  {{ $conf = .Site.Params.logo.cn }}
+{{ end }}
+
+{{/* --- 2. 渲染 Logo 图片 --- */}}
+<div class="site-logo">
+  {{/* href 读取配置里的 url (比如 / 或 /cn/) */}}
+  <a href="{{ $conf.url | relURL }}">
+    {{/* src 读取配置里的 img (比如 /images/logo.png) */}}
+    <img src="{{ $conf.img | relURL }}" alt="{{ $conf.alt }}" style="max-width: 100%; height: auto;">
+  </a>
+</div>
+
+{{/* --- 3. (可选) 如果图片下还想显示文字标题，保留下面这行，否则可以删除 --- */}}
+{{/* <h1><a href="{{ $conf.url | relURL }}">{{ .Site.Title }}</a></h1> */}}
+
+{{/* --- 4. 显示描述 (Description) --- */}}
+{{/* 这里也做个判断，如果是中文就显示中文描述 */}}
+{{ $desc := .Site.Params.description }}
+{{ if findRE "^/cn/" .RelPermalink }}
+  {{ $desc = .Site.Params.author.cn }} {{/* 或者你可以专门在 config 里定义中文 description */}}
+{{ end }}
+
+{{ if $desc }}
+<p class="tagline">{{ $desc }}</p>
+{{ end }}

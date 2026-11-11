@@ -1,5 +1,11 @@
 .DS_Store
 .Rhistory
+.Rapp.history
 .Rproj.user/
+.RData
+.Ruserdata
 Thumbs.db
 *.swp
+public/
+resources/
+.hugo_build.lock
