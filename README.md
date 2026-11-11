@@ -15,6 +15,7 @@ Personal website of Ning Zhang, <https://ning.im>. Built with [Hugo](https://goh
 | `themes/hugo-ivy/` | Theme (vendored copy) |
 | `R/`, `.Rprofile`, `blog.Rproj` | RStudio / blogdown project files |
 | `.github/workflows/build.yml` | Build check on `dev` and PRs |
+| `wrangler.jsonc`, `build.sh` | Cloudflare Worker config and build script |
 
 ## Writing
 
@@ -34,11 +35,10 @@ Preview with RStudio (blogdown "Serve Site") or `hugo server`.
 
 ## Deployment
 
-Hosted on **Cloudflare Pages** (connected to this repo):
+Hosted on a **Cloudflare Worker** (`ning-im`, static assets only), connected to this repo
+with Workers Builds:
 
-- Build command: `hugo`
-- Output directory: `public`
-- Environment variable: `HUGO_VERSION = 0.110.0`
+- Build command: `bash build.sh` (installs Hugo 0.110.0 if needed, writes `public/`)
+- Deploy command: `npx wrangler deploy` (reads `wrangler.jsonc`)
 
-Every push to the production branch redeploys ning.im; other branches get preview URLs
-on `*.pages.dev`.
+`static/_redirects` is copied into `public/` and applied by Cloudflare.
